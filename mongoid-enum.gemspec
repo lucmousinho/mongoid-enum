@@ -6,11 +6,11 @@ require 'mongoid/enum/version'
 Gem::Specification.new do |spec|
   spec.name          = "mongoid-enum"
   spec.version       = Mongoid::Enum::VERSION
-  spec.authors       = ["Nicholas Bruning"]
-  spec.email         = ["nicholas@bruning.com.au"]
+  spec.authors       = ["Nicholas Bruning, Lucas Mousinho"]
+  spec.email         = ["nicholas@bruning.com.au, lucmousinho@gmail.com"]
   spec.description   = %q{Heavily inspired by DDH's ActiveRecord::Enum, this little library is there to help you cut down the cruft in your models and make the world a happier place at the same time.}
   spec.summary       = %q{Sweet enum sugar for your Mongoid documents}
-  spec.homepage      = "https://github.com/thetron/mongoid-enum"
+  spec.homepage      = "https://github.com/lucmousinho/mongoid-enum"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency "mongoid", "~> 5.0"
+  spec.add_runtime_dependency "mongoid", "~> 7.0.2"
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
